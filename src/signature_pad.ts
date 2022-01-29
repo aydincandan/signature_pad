@@ -54,6 +54,8 @@ export default class SignaturePad extends SignatureEventTarget {
   public velocityFilterWeight: number;
   public backgroundColor: string;
   public throttle: number;
+  onBegin?: (event: MouseEvent | Touch) => void;
+  onEnd?: (event: MouseEvent | Touch) => void;
 
   // Private stuff
   /* tslint:disable: variable-name */
